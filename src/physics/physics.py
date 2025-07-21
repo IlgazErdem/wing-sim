@@ -2,8 +2,6 @@ import math
 
 class Pressure:
 
-    # the defaults for pressure and temperature at sea level are 101,325 Pa and 288 K
-
     def __init__(self, altitude_m, groundtemperature_k =288.0, groundpressure_pa = 101325.0 ,humidity=0):
 
         self.groundtemperature = groundtemperature_k
