@@ -24,7 +24,6 @@ class Pressure:
 
         self.temperature = self.calculate_temperature_at_height()
         self.pressure = self.calculate_pressure()
-        self.tempuratur = self.calculate_temperature_at_height()
 
     def calculate_pressure(self):
         #Barometric formula
