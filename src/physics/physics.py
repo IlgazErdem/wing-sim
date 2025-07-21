@@ -19,7 +19,7 @@ class Pressure:
         # self.standarttemperature = 288.00 # dim K
         # self.standartpressure = 101.325 # dim pa
 
-        # TODO: CHECK AND CONVERT TO USABLE UNITS
+        # TO DO: CHECK AND CONVERT TO USABLE UNITS
 
 
         self.temperature = self.calculate_temperature_at_height()
