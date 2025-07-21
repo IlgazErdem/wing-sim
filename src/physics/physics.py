@@ -9,6 +9,20 @@ class Pressure:
         self.humidity = humidity
         self.groundpressure = groundpressure_pa
 
+        self.gravity = 9.8066 # dim = m * m / s
+        self.boltzmann = 1.3806e-23  # dim J / K
+        self.mavg = 29.000 * 1.6605e-27  # dim kg
+        self.lapserate = 9.8  #dim K / km
+
+        # UNUSED
+        # self.gasconstant = 287.05 # dim J / (k * mol)
+        # self.standarttemperature = 288.00 # dim K
+        # self.standartpressure = 101.325 # dim pa
+
+        # TODO: CHECK AND CONVERT TO USABLE UNITS
+
+
+        self.temperature = self.calculate_temperature_at_height()
         self.pressure = self.calculate_pressure()
         self.tempuratur = self.calculate_temperature_at_height()
 
