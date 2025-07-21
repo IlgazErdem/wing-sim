@@ -1,3 +1,5 @@
+import math
+
 class Pressure:
 
     # the defaults for pressure and temperature at sea level are 101,325 Pa and 288 K
