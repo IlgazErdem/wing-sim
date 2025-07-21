@@ -32,12 +32,7 @@ class Pressure:
 
     def calculate_temperature_at_height(self):
 
-        #R = 287.05 # dim = J / (kg * K)  gas constant
-       # g = 9.8066 # dim = m * m / s  standard gravity of earth
-
-        # VERY ROUGH ESTIMATION FOR NOW
-        return self.groundtemperature - (int(self.altitude) / 1000) * 3.5
-
+        return self.groundtemperature - self.lapserate * (self.altitude / 1000)
 
 
 
