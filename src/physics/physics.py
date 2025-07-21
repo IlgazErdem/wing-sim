@@ -28,9 +28,7 @@ class Pressure:
     def calculate_pressure(self):
         #Barometric formula
         #http://hyperphysics.phy-astr.gsu.edu/hbase/Kinetic/barfor.html#c2
-        # P final = P ground * e ^ (-m * g * h / (k * T) )
-        placeholder = 0
-        return placeholder
+        return self.groundpressure * -math.exp(self.altitude * self.gravity * self.mavg / (self.boltzmann * self.temperature))
 
     def calculate_temperature_at_height(self):
 
